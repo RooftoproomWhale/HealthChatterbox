@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hci.healthchatterbox.Fragment.SurveyFragment3"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:text="당신의 하루 평균수면 시간은 어떻게 됩니까?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="left|center">
+
+        <RadioButton
+            android:id="@+id/sleepRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="5시간 이하" />
+
+        <RadioButton
+            android:id="@+id/sleepRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentalRadio"
+            android:layout_marginBottom="10dp"
+            android:text="5~8시간 사이" />
+
+        <RadioButton
+            android:id="@+id/sleepRadio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentalRadio2"
+            android:layout_marginBottom="10dp"
+            android:text="8시간 이상" />
+    </RadioGroup>
+</LinearLayout>

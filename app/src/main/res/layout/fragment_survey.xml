@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hci.healthchatterbox.Fragment.SurveyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:text="오늘 하루 당신의 심리상태는 어떻습니까?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="left|center">
+
+        <RadioButton
+            android:id="@+id/mentalRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="귀찮음" />
+
+        <RadioButton
+            android:id="@+id/mentalRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentalRadio"
+            android:layout_marginBottom="10dp"
+            android:text="바쁘거나 피곤" />
+
+        <RadioButton
+            android:id="@+id/mentalRadio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentalRadio2"
+            android:layout_marginBottom="10dp"
+            android:text="우울하고 무기력" />
+
+        <RadioButton
+            android:id="@+id/mentalRadio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentalRadio3"
+            android:text="좋음" />
+
+    </RadioGroup>
+
+</LinearLayout>

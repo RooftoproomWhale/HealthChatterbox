@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hci.healthchatterbox.Fragment.SurveyFragment5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:text="오늘 하루 당신이 운동을 \n하지 못한 이유는 무엇입니까?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="left|center">
+
+        <RadioButton
+            android:id="@+id/causeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="일" />
+
+        <RadioButton
+            android:id="@+id/causeRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentalRadio"
+            android:layout_marginBottom="10dp"
+            android:text="날씨" />
+
+        <RadioButton
+            android:id="@+id/causeRadio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentalRadio2"
+            android:layout_marginBottom="10dp"
+            android:text="대기상태" />
+
+        <RadioButton
+            android:id="@+id/causeRadio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentalRadio3"
+            android:text="약속" />
+
+    </RadioGroup>
+
+</LinearLayout>

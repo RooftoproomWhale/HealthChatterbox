@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeatherImage">
+        <attr name="Imagesrc" format="reference|integer" />
+        <attr name="Text" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="AirPollutionImage">
+        <attr name="AirImagesrc" format="reference|integer"/>
+        <attr name="Text1" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="TempImage">
+        <attr name="TempText" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="HealCheckImage">
+        <attr name="Checked" format="reference|boolean"/>
+    </declare-styleable>
+</resources>

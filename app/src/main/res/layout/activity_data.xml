@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hci.healthchatterbox.activity.DataActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/underline"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/backimageButton"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/top_icon" />
+
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ExercizeImage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/blue_circle" />
+
+                                <TextView
+                                    android:id="@+id/ExercizetextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp"
+                                    android:text="TextView"
+                                    android:textSize="24sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="하루 건강상태"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TableLayout
+                                android:id="@+id/tablelayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:padding="8dp"
+                                android:stretchColumns="*">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="수면상태"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView15"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="건강상태"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView17"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="영양상태"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/tablementaltextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="정신건강"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/sleepImage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/red_circle" />
+
+                                    <ImageView
+                                        android:id="@+id/healthImage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/yellow_circle" />
+
+                                    <ImageView
+                                        android:id="@+id/nutriImage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/red_circle" />
+
+                                    <ImageView
+                                        android:id="@+id/mentalImage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/blue_circle" />
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <LinearLayout
+                                android:id="@+id/examLinear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView13"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/red_circle" />
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="위험" />
+
+                                <ImageView
+                                    android:id="@+id/imageView14"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/yellow_circle" />
+
+                                <TextView
+                                    android:id="@+id/textView18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="주의" />
+
+                                <ImageView
+                                    android:id="@+id/imageView15"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/blue_circle" />
+
+                                <TextView
+                                    android:id="@+id/textView19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="양호" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tab2textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:text="TextView"
+                                android:textSize="24sp" />
+
+                            <com.github.lzyzsd.circleprogress.DonutProgress
+                                android:id="@+id/donutProgress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:donut_progress="33"
+                                app:donut_text_size="14dp" />
+
+                            <TextView
+                                android:id="@+id/textViewhealth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="주간 건강상태(그래프 터치시 정보 확인가능)"
+                                android:textSize="18sp" />
+
+                            <com.hadiidbouk.charts.ChartProgressBar
+                                android:id="@+id/HealthChartProgressBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                app:hdBarCanBeClick="true"
+                                app:hdBarHeight="170dp"
+                                app:hdBarWidth="16dp"
+                                app:hdBarRadius="10dp"
+                                app:hdMaxValue="10"
+                                app:hdEmptyColor="@color/empty"
+                                app:hdProgressColor="@color/progress"
+                                app:hdProgressClickColor="@color/progress_click"
+                                app:hdPinBackgroundColor="@color/pin_background"
+                                app:hdPinTextColor="@color/pin_text"
+                                app:hdPinPadding="3dp"
+                                app:hdBarTitleColor="@color/bar_title_color"
+                                app:hdBarTitleTxtSize="12sp"
+                                app:hdPinTxtSize="17sp"
+                                app:hdPinMarginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/textViewmental"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="주간 정신건강상태(그래프 터치시 정보 확인가능)"
+                                android:textSize="18sp" />
+
+                            <com.hadiidbouk.charts.ChartProgressBar
+                                android:id="@+id/MentalChartProgressBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                app:hdBarCanBeClick="true"
+                                app:hdBarHeight="170dp"
+                                app:hdBarWidth="16dp"
+                                app:hdBarRadius="10dp"
+                                app:hdMaxValue="10"
+                                app:hdEmptyColor="@color/empty"
+                                app:hdProgressColor="@color/progress"
+                                app:hdProgressClickColor="@color/progress_click"
+                                app:hdPinBackgroundColor="@color/pin_background"
+                                app:hdPinTextColor="@color/pin_text"
+                                app:hdPinPadding="3dp"
+                                app:hdBarTitleColor="@color/bar_title_color"
+                                app:hdBarTitleTxtSize="12sp"
+                                app:hdPinTxtSize="17sp"
+                                app:hdPinMarginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/textViewsleep"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="주간 수면상태(그래프 터치시 정보 확인가능)"
+                                android:textSize="18sp" />
+
+                            <com.hadiidbouk.charts.ChartProgressBar
+                                android:id="@+id/SleepChartProgressBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                app:hdBarCanBeClick="true"
+                                app:hdBarHeight="170dp"
+                                app:hdBarWidth="16dp"
+                                app:hdBarRadius="10dp"
+                                app:hdMaxValue="10"
+                                app:hdEmptyColor="@color/empty"
+                                app:hdProgressColor="@color/progress"
+                                app:hdProgressClickColor="@color/progress_click"
+                                app:hdPinBackgroundColor="@color/pin_background"
+                                app:hdPinTextColor="@color/pin_text"
+                                app:hdPinPadding="3dp"
+                                app:hdBarTitleColor="@color/bar_title_color"
+                                app:hdBarTitleTxtSize="12sp"
+                                app:hdPinTxtSize="17sp"
+                                app:hdPinMarginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/textViewnutri"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="주간 영양상태(그래프 터치시 정보 확인가능)"
+                                android:textSize="18sp" />
+
+                            <com.hadiidbouk.charts.ChartProgressBar
+                                android:id="@+id/NutriChartProgressBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                app:hdBarCanBeClick="true"
+                                app:hdBarHeight="170dp"
+                                app:hdBarWidth="16dp"
+                                app:hdBarRadius="10dp"
+                                app:hdMaxValue="10"
+                                app:hdEmptyColor="@color/empty"
+                                app:hdProgressColor="@color/progress"
+                                app:hdProgressClickColor="@color/progress_click"
+                                app:hdPinBackgroundColor="@color/pin_background"
+                                app:hdPinTextColor="@color/pin_text"
+                                app:hdPinPadding="3dp"
+                                app:hdBarTitleColor="@color/bar_title_color"
+                                app:hdBarTitleTxtSize="12sp"
+                                app:hdPinTxtSize="17sp"
+                                app:hdPinMarginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/textViewcause"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="주간 외적요인상태(그래프 터치시 정보 확인가능)"
+                                android:textSize="18sp" />
+
+                            <com.hadiidbouk.charts.ChartProgressBar
+                                android:id="@+id/causeChartProgressBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                app:hdBarCanBeClick="true"
+                                app:hdBarHeight="170dp"
+                                app:hdBarWidth="16dp"
+                                app:hdBarRadius="10dp"
+                                app:hdMaxValue="10"
+                                app:hdEmptyColor="@color/empty"
+                                app:hdProgressColor="@color/progress"
+                                app:hdProgressClickColor="@color/progress_click"
+                                app:hdPinBackgroundColor="@color/pin_background"
+                                app:hdPinTextColor="@color/pin_text"
+                                app:hdPinPadding="3dp"
+                                app:hdBarTitleColor="@color/bar_title_color"
+                                app:hdBarTitleTxtSize="12sp"
+                                app:hdPinTxtSize="17sp"
+                                app:hdPinMarginTop="10dp"/>
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tab3textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:text="한 달 데이터가 아직 모이지 않았습니다"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
